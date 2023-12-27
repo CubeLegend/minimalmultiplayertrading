@@ -1,18 +1,13 @@
 {
-    "name": "m-multiplayertrading",
-    "version": "0.9.17",
+    "name": "minimalmultiplayertrading",
+    "version": "0.0.1",
     "factorio_version": "1.1",
-    "title": "Multiplayer Trading",
-    "author": "Luke Perkin",
-    "contact": "zweroxotnik@gmail.com, lukeperkin@gmail.com",
+    "title": "Minimal Multiplayer Trading",
+    "author": "CubeLegend",
     "homepage": "",
     "dependencies": [
-			"base",
-			"EasyAPI >= 0.3.7",
-			"money-UI",
-			"! multiplayertrading",
-			"(?) RPGsystem",
-			"(?) Death_Counter",
-			"(?) spawn"
-		]
-  }
+        "base",
+        "! multiplayertrading",
+        "! m-multiplayertrading"
+    ]
+}
