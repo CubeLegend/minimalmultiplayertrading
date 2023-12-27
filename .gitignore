@@ -118,6 +118,7 @@ typings/
 .serverless
 # VS Code stuff
 .vscode/launch.json
+.vscode
 # Temporal files
 tmp
 
