@@ -10,22 +10,6 @@ local function copy(thing)
     end
 end
 
-if settings.startup['land-claim'].value then
-    local electric_poles = data.raw['electric-pole']
-    local poles = {"small-electric-pole", "medium-electric-pole", "big-electric-pole", "substation"}
-    for _, pole_name in ipairs(poles) do
-        local prototype = electric_poles[pole_name]
-        if prototype then
-            if prototype.supply_area_distance < 20 then
-                prototype.supply_area_distance = prototype.supply_area_distance * 2
-            end
-            if prototype.maximum_wire_distance < 20 then
-                prototype.maximum_wire_distance = prototype.maximum_wire_distance * 2
-            end
-        end
-    end
-end
-
 -- This is kinda a dirty way to fix bugs
 local allow_early_bird_research = true
 if mods["space-exploration"] or mods["Krastorio2"] or mods["angelsrefining"] or mods["bobplates"] then

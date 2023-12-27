@@ -14,32 +14,5 @@ data:extend({
         name = "specializations",
         setting_type = "startup",
         default_value = true
-    }, {
-        type = "bool-setting",
-        name = "land-claim",
-        setting_type = "startup",
-        default_value = true
-    }, {
-        type = "double-setting",
-        name = "land-claim-cost",
-        setting_type = "runtime-global",
-        default_value = 1.0
-    }, {
-        type = "double-setting",
-        name = "credit-mint-speed",
-        setting_type = "runtime-global",
-        default_value = 0.01
-    }, {
-        type = "int-setting",
-        name = "mint-money-per-cycle",
-        setting_type = "runtime-global",
-        default_value = 2,
-		minimum_value = 1,
-		maximum_value = 1e5
-    }, {
-        type = "string-setting",
-        name = "credit-mint-energy-usage",
-        setting_type = "startup",
-        default_value = "2000kW"
     }
 })
